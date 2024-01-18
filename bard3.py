@@ -10,7 +10,7 @@ pip install bardapi
 # In[1]:
 
 
-_BARD_API_KEY='fAiz88g4cbTUZP1ODKziJFVeNxLbzpdHPwU8NhEKvPigZ4gG7GE_FcQn1OiuHidlvg-kng.'
+_BARD_API_KEY='your_cookie_value'
 
 
 # In[2]:
@@ -43,7 +43,7 @@ load_dotenv()
 
 def call_bard(query):
     # Replace 'YOUR_API_KEY' with your actual Bard API key
-    bard = Bard(token='fAiz88g4cbTUZP1ODKziJFVeNxLbzpdHPwU8NhEKvPigZ4gG7GE_FcQn1OiuHidlvg-kng.')
+    bard = Bard(token='your_cookie_value')
     answer = bard.get_answer(query)
     return answer['content']
 
@@ -62,7 +62,7 @@ load_dotenv()
 
 def summarizer(query):
     # Replace 'YOUR_API_KEY' with your actual Bard API key
-    bard = Bard(token='fAiz88g4cbTUZP1ODKziJFVeNxLbzpdHPwU8NhEKvPigZ4gG7GE_FcQn1OiuHidlvg-kng.')
+    bard = Bard(token='your_cookie_value')
     answer = bard.get_answer(query)
     return answer['content']
 
@@ -114,7 +114,7 @@ def bard_translator(input_text, token, target_language='en'):
     return translation.text
 
 # Example usage with your Bard API key
-api_key = 'fAiz88g4cbTUZP1ODKziJFVeNxLbzpdHPwU8NhEKvPigZ4gG7GE_FcQn1OiuHidlvg-kng.'
+api_key = 'your_cookie_value'
 input_text = '''Bonjour, comment vas-tu?'''
 translated_text = bard_translator(input_text, token=api_key, target_language='en')
 
@@ -131,7 +131,7 @@ load_dotenv()
 
 def retriever(query):
     
-    bard = Bard(token='fAiz88g4cbTUZP1ODKziJFVeNxLbzpdHPwU8NhEKvPigZ4gG7GE_FcQn1OiuHidlvg-kng.')
+    bard = Bard(token='your_cookie_value.')
     answer = bard.get_answer(query)
     return answer['content']
 
