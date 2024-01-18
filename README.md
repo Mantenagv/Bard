@@ -19,5 +19,5 @@ query = st.text_input("Ask Bard about the image:")
  image = uploaded_file.read()
             response = call_bard_for_image(query, image)
 #To integrate in streamlit use the below code in streamlit.py file replace the existing functions of text with above code
-
+#to run streamlit.py file go anaconda prompt and install bardapi and streamlit package and update protub 
 
