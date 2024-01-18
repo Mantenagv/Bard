@@ -28,7 +28,7 @@ if(option == 'Chat With Your Data'):
 
     def call_bard(query):
             # Replace 'YOUR_API_KEY' with your actual Bard API key
-            bard = Bard(token="fAjNhuslL1hUIIU90BDdLXY3Wgls1MPQ7RSLCBHIvH1WW7ykpUAaRGj7Xdf92PkmgwIoUg.")
+            bard = Bard(token="YOUR_API_KEY")
             answer = bard.get_answer(query)
             return answer['content']
 
@@ -56,7 +56,7 @@ if(option == 'Image Analysis'):
     from bardapi import Bard
 
         # Replace 'YOUR_API_KEY' with your actual Bard API key
-    BARD_API_KEY = "fAjNhuslL1hUIIU90BDdLXY3Wgls1MPQ7RSLCBHIvH1WW7ykpUAaRGj7Xdf92PkmgwIoUg."
+    BARD_API_KEY = "YOUR_API_KEY"
 
     def call_bard_for_image(query, image):
             bard = Bard(token=BARD_API_KEY)
