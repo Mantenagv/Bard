@@ -1,6 +1,7 @@
 # Bard
 Bard API integration using Cookie value 
-Here i am not mentioning my cookie value so replace the cookie value with your cokkie value
+Google Bard haven't released Bard API to integrate Bard completely so i have integrated the Bard API using the cookie value
+I used streamlit package to create the frontend to deploy the bard functionality
 #how to to get cookie value from your bard website
 step 1:press F12 
 step 2:click >> arows and goto Applications
@@ -18,5 +19,5 @@ query = st.text_input("Ask Bard about the image:")
  image = uploaded_file.read()
             response = call_bard_for_image(query, image)
 #To integrate in streamlit use the below code in streamlit.py file replace the existing functions of text with above code
-#I used streamlit package to create the frontend to deploy the bard functionality
+
 
